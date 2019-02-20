@@ -4,11 +4,6 @@ let events = new Set([
     'onchange'
 ]);
 
-
-let props = new Set([
-    'focus'
-]);
-
 function node(tagName, attrs, children) {
     if(typeof attrs !== 'object' || attrs === null) {
         throw "attrs has to be an object";
